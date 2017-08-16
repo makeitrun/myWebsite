@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+    <description>
+      Servlet and JSP Examples.
+    </description>
+    <display-name>Servlet and JSP Examples</display-name>
+    
+    <servlet>
+    <!--name your servlet-->
+      <servlet-name>hello</servlet-name>
+     <!--define the path of servlet (package name and class name)-->
+      <servlet-class>zsy.Hello</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+	<!--url in the browser to access this servlet-->
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <!--name your servlet-->
+      <servlet-name>helloGeneric</servlet-name>
+     <!--define the path of servlet (package name and class name)-->
+      <servlet-class>zsy.HelloGeneric</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>helloGeneric</servlet-name>
+	<!--url in the browser to access this servlet-->
+        <url-pattern>/helloGeneric</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <!--name your servlet-->
+      <servlet-name>helloHttp</servlet-name>
+     <!--define the path of servlet (package name and class name)-->
+      <servlet-class>zsy.HelloHttp</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>helloHttp</servlet-name>
+	<!--url in the browser to access this servlet-->
+        <url-pattern>/helloHttp</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet>
+    <!--name your servlet-->
+      <servlet-name>loginServlet</servlet-name>
+     <!--define the path of servlet (package name and class name)-->
+      <servlet-class>zsy.LoginServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+	<!--url in the browser to access this servlet-->
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <!--name your servlet-->
+      <servlet-name>loginCheck</servlet-name>
+     <!--define the path of servlet (package name and class name)-->
+      <servlet-class>zsy.LoginCheck</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>loginCheck</servlet-name>
+	<!--url in the browser to access this servlet-->
+        <url-pattern>/loginCheck</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <!--name your servlet-->
+      <servlet-name>welcome</servlet-name>
+     <!--define the path of servlet (package name and class name)-->
+      <servlet-class>zsy.Welcome</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>welcome</servlet-name>
+	<!--url in the browser to access this servlet-->
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <!--name your servlet-->
+      <servlet-name>sessiontest1</servlet-name>
+     <!--define the path of servlet (package name and class name)-->
+      <servlet-class>zsy.SessionTest1</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>sessiontest1</servlet-name>
+	<!--url in the browser to access this servlet-->
+        <url-pattern>/sessiontest1</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <!--name your servlet-->
+      <servlet-name>sessiontest2</servlet-name>
+     <!--define the path of servlet (package name and class name)-->
+      <servlet-class>zsy.SessionTest2</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>sessiontest2</servlet-name>
+	<!--url in the browser to access this servlet-->
+        <url-pattern>/sessiontest2</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
